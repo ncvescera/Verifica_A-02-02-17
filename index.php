@@ -17,33 +17,8 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-      function send(){
-        var ogg = $('#oggetto').val();
-        var num = $('#quantita').val();
-
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            $('#result').html(this.responseText);
-            printTable();
-          }
-        };
-        xhttp.open("GET", "./getData.php?oggetto="+ogg+"&num="+num, true);
-        xhttp.send();
-      }
-      function printTable(){
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            $('#table').html(this.responseText);
-          }
-        };
-        xhttp.open("GET", "./printTable.php", true);
-        xhttp.send();
-      }
-
-    </script>
+    <!-- Chiamate AJAX -->
+    <script src="./js/ajax.js"></script>
 
   </head>
   <body>
