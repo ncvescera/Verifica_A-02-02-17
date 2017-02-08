@@ -10,7 +10,7 @@
     }
 
     function getNome(){return $this->nome;}
-    function getVal(){return $this->val;}
+    function getVal() {return $this->val;}
     function sumVal($val){
       $this->val = $this->val + $val;
     }

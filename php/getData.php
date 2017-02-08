@@ -1,11 +1,11 @@
 <?php
   include 'Oggetto.php';
 
-  $oggetto = $_GET['oggetto'];
-  $num = $_GET['num'];
-
+  $oggetto  = $_GET['oggetto'];
+  $num      = $_GET['num'];
 
   session_start();
+
   if(isset($_SESSION['first']) && $_SESSION['first'] == true){
     array_push($_SESSION['array'],new Oggetto($oggetto,$num));
     echo "Oggetto aggiunto come priva volta";

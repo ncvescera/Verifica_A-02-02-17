@@ -14,9 +14,8 @@
   echo "</table>";
 
   function getMax(){
-    $array = $_SESSION['array'];
-
-    $max = $array[0];
+    $array  = $_SESSION['array'];
+    $max    = $array[0];
 
     foreach ($array as $elem) {
       if($elem->getVal() > $max->getVal()){
