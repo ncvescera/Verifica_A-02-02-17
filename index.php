@@ -30,7 +30,7 @@
           <label>Oggetto</label> <input type="text" id="oggetto" class="form-control">
           <label>Quantità</label> <input type="number" id="quantita" class="form-control">
           <button onclick="send()" class="btn btn-success">invia</button>
-      </div>
+        </div>
         <br>
         <div id="result"></div>
       </div>
